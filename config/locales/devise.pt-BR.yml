@@ -25,7 +25,7 @@ pt-BR:
     sessions:
       new:
         name: "Login"
-        title: "Acesso ao sistema"
+        title: "Login"
         submit: "Entrar"
       destroy:
         name: "Logout"
@@ -55,7 +55,7 @@ pt-BR:
     registrations:
       new:
         name: "Novo usuário"
-        title: "Registrar novo usuário"
+        title: "Criar novo usuário"
       edit:
         name: "Meus dados"
         title: "Modificar usuário"
