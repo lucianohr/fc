@@ -56,6 +56,7 @@ pt-BR:
       new:
         name: "Novo usuário"
         title: "Criar novo usuário"
+        submit: 'Salvar'
       edit:
         name: "Meus dados"
         title: "Modificar usuário"

@@ -11,8 +11,10 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require foundation
+//= require jquery-modal/jquery.modal
+//= require bootstrap-sass-official
+//= require select2
+//= require select2/select2_locale_"pt-BR"
+//= require parsleyjs
+//= require parsley.i18n.pt_br
 //= require_tree .
-
-$(function(){ $(document).foundation(); });

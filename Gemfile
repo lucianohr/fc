@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
@@ -7,22 +8,16 @@ gem 'rails', '4.0.0'
 # gem 'sqlite3'
 gem 'mysql2', '~>0.3'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
-
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '~> 3.1.0'
-gem 'jquery-ui-rails', '~> 4.0.5'
-gem "jquery-modal-rails", '~> 0.0.4'
+gem 'rails-assets-jquery', '~> 2.1.1'
+gem 'rails-assets-jquery-ui', '~> 1.11.0'
+gem 'rails-assets-jquery-modal', '~> 0.5.2'
+# gem 'jquery-rails', '~> 3.1.0'
+# gem 'jquery-ui-rails', '~> 4.0.5'
+# gem "jquery-modal-rails", '~> 0.0.4'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'
@@ -31,15 +26,25 @@ gem "jquery-modal-rails", '~> 0.0.4'
 gem 'jbuilder', '~> 1.2'
 
 gem 'symbolize', '~> 4.4.1'
-gem 'simple_form', '~> 3.0.2'
+# gem 'simple_form', '~> 3.0.2'
 gem 'schema_plus', '~> 1.5.1'
 gem 'schema_validations', '~> 1.0.0'
 gem 'cancan', '~> 1.6.10'
 gem 'rails-i18n', '~> 4.0.2'
 gem 'kaminari', '~> 0.16.0'
 gem 'ransack', '~> 1.2.3'
-gem 'foundation-rails'
+# gem 'foundation-rails'
+# gem 'bootstrap-sass', '3.1.1.1'
+gem 'rails-assets-bootstrap-sass-official', '~> 3.1.1.2'
+gem 'rails-assets-font-awesome', '~> 4.1.0'
+gem 'rails-assets-bootswatch-scss', '~> 3.1.1'
+gem 'rails-assets-parsleyjs', '~> 2.0.3'
+gem 'rails-assets-select2', '~> 3.5.1'
+gem 'rails-assets-select2-bootstrap', '~> 1.3.0'
+# gem 'bootswatch-rails', '3.1.1.1'
 gem 'devise', '~> 3.2.4'
+gem 'formtastic', '2.3.0.rc3' #'~> 2.2.1'
+gem 'formtastic-bootstrap', '~> 3.0.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
