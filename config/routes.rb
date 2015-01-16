@@ -1,6 +1,6 @@
 Fc::Application.routes.draw do
-  devise_for :usuarios, path: 'auth'
-  resources :usuarios
+  devise_for :usuarios, :path => 'auth', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  resources :usuarios, path: 'admin/usuarios'
 
   root to: "home#index"
   # The priority is based upon order of creation: first created -> highest priority.
