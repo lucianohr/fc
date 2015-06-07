@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
-source 'https://rails-assets.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.2.1'
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
@@ -12,15 +11,21 @@ gem 'mysql2', '~>0.3'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'rails-assets-jquery', '~> 2.1.1'
-gem 'rails-assets-jquery-ui', '~> 1.11.0'
-gem 'rails-assets-jquery-modal', '~> 0.5.2'
-# gem 'jquery-rails', '~> 3.1.0'
-# gem 'jquery-ui-rails', '~> 4.0.5'
-# gem "jquery-modal-rails", '~> 0.0.4'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery', '~> 2.1.1'
+  gem 'rails-assets-jquery-ui', '~> 1.11.0'
+  gem 'rails-assets-jquery-modal', '~> 0.5.2'
+  gem 'rails-assets-bootstrap-sass-official', '~> 3.1.1.2'
+  gem 'rails-assets-font-awesome', '~> 4.1.0'
+  gem 'rails-assets-bootswatch-scss', '~> 3.1.1'
+  gem 'rails-assets-parsleyjs', '~> 2.0.3'
+  gem 'rails-assets-select2', '~> 3.5.1'
+  gem 'rails-assets-select2-bootstrap', '~> 1.3.0'
+end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-# gem 'turbolinks'
+gem 'turbolinks', '~> 2.5.3'
+gem 'jquery-turbolinks', '~> 2.1.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -29,22 +34,16 @@ gem 'symbolize', '~> 4.4.1'
 # gem 'simple_form', '~> 3.0.2'
 gem 'schema_plus', '~> 1.5.1'
 gem 'schema_validations', '~> 1.0.0'
-gem 'cancan', '~> 1.6.10'
+gem 'cancancan', '~> 1.10'
 gem 'rails-i18n', '~> 4.0.2'
 gem 'kaminari', '~> 0.16.0'
 gem 'ransack', '~> 1.2.3'
-# gem 'foundation-rails'
-# gem 'bootstrap-sass', '3.1.1.1'
-gem 'rails-assets-bootstrap-sass-official', '~> 3.1.1.2'
-gem 'rails-assets-font-awesome', '~> 4.1.0'
-gem 'rails-assets-bootswatch-scss', '~> 3.1.1'
-gem 'rails-assets-parsleyjs', '~> 2.0.3'
-gem 'rails-assets-select2', '~> 3.5.1'
-gem 'rails-assets-select2-bootstrap', '~> 1.3.0'
-# gem 'bootswatch-rails', '3.1.1.1'
-gem 'devise', '~> 3.2.4'
-gem 'formtastic', '2.3.0.rc3' #'~> 2.2.1'
-gem 'formtastic-bootstrap', '~> 3.0.0'
+gem 'devise', '~> 3.4.1'
+gem 'formtastic', '~> 3.1.3'
+gem 'formtastic-bootstrap', '~> 3.1.0'
+
+# gem necessária para capybara
+gem 'minitest', '~> 5.5.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -73,7 +72,7 @@ group :test, :development do
   gem 'thin', '~> 1.6.0'
   gem 'capistrano', '2.15.5'
   gem 'capistrano-ext', '1.2.1'
-  gem 'rvm-capistrano', '1.2.7'
+  gem 'rvm-capistrano', '1.2.7', require: false
 end
 
 # Gems used only for assets and not required
