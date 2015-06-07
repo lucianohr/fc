@@ -1,0 +1,4 @@
+<h1><%%= params[:action] == 'new' ? t('.title') : t('<%= plural_table_name %>.edit.title') %></h1>
+
+<%%= render 'form' %>
+
